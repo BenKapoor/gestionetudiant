@@ -7,8 +7,6 @@ a- TomcatServer 9.0 | Utilisation de Java v.8.x -
 b- Créer une base de données mysql à l'aide de wamp qui se nomera `gestionetudiant` en important le fichier gestionetudiant.sql 
 permettant d'avoir des données exemples et de connection.
 
-Configurer le fichier `persistence.xml` situé  `GestionEtudiant/src/main/resources/META-INF/` : URL de la base, login du SGBD et mot de passe du SGBD.
-
 <b>0bis- Récupération du war</b>
 
 Au niveau de votre disque C, ouvirir une console cmd et ecrire:
@@ -17,6 +15,9 @@ Au niveau de votre disque C, ouvirir une console cmd et ecrire:
 `cd c:\GTMGestionEtudiant`
 
 `mvn scm:checkout  -DconnectionUrl=scm:git:https://github.com/BenKapoor/GestionEtudiant`
+
+<b>Configuration de la connection à la base de donnée :</b>
+Configurer le fichier `persistence.xml` situé  `GestionEtudiant/src/main/resources/META-INF/` : URL de la base, login du SGBD et mot de passe du SGBD.
 
 Aller dans `target\checkout\GestionEtudiant`
 
